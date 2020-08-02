@@ -44,6 +44,25 @@ class Zip extends ShortZip
     protected $zoneExpressDelivery = null;
 
     /**
+     * @var int
+     */
+    protected $remoteness;
+
+    /**
+     * @return int
+     */
+    public function getRemoteness(): int {
+        return $this->remoteness;
+    }
+
+    /**
+     * @param int $remoteness
+     */
+    public function setRemoteness(int $remoteness): void {
+        $this->remoteness = $remoteness;
+    }
+
+    /**
      * @return string
      */
     public function getZip()
